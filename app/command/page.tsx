@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Direction from '../components/Direction';
 import Buttons from '../components/Buttons';
+import Others from '../components/Others';
 
 export default function CommandPage() {
     const [text, setText] = useState<string>("");
@@ -41,6 +42,7 @@ export default function CommandPage() {
         <div>
             <div className="flex justify-center items-center">
                 <Direction onDirectionClick={handleAddCommand} />
+                <Others onAddText={handleAddCommand} />
                 <Buttons onAddPunch={handleAddCommand} />
             </div>
             <div className="flex justify-center items-center">

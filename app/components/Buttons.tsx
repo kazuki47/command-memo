@@ -9,7 +9,7 @@ interface PunchButtonsProps {
 
 const Buttons = ({ onAddPunch }: PunchButtonsProps) => {
     return (
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-4 px-16">
             {/* 上段：P（パンチ）小中大 */}
             <div className="flex space-x-4">
                 <button 
